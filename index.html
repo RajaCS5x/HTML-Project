@@ -11,6 +11,18 @@
   {
     window.scrollTo(right,top);
   }
+   function check()
+    {
+        var a=document.getElementById("name").value;
+        if(isNaN(a))
+        {
+            alert("information is  invalid");
+        }
+        else
+        {
+            alert("Information is submited");
+        }
+    }
 </script>
 </head>
 <body style="background-color:black;">
@@ -43,29 +55,29 @@
     <div>
     <form method="post" id="register" action="">
       <label>First name:</label><br/>
-      <input type="text" name="Fname" id="name" placeholder="Enter Your First name"></br/><br/>
+      <input type="text" name="Fname"  placeholder="Enter Your First name"></br/><br/>
       <label>Last name:</label><br/><br/>
-      <input type="text" name="Lname" id="name" placeholder="Enter Your Last name"><br/><br/>
+      <input type="text" name="Lname" \ placeholder="Enter Your Last name"><br/><br/>
       <label>Mobile Number:</label><br/>
-      <select id="ph">
+      <select id="name">
       <option>+91</option>
       <option>+92</option>
       <option>+93</option>
       <option>+94</option>
       <option>+95</option>
       </select>
-      <input type="number" name="num" id="name" placeholder="Enter Your Mobile number"><br/><br/>
+      <input type="number" name="num"  placeholder="Enter Your Mobile number"><br/><br/>
       <label>Email id:</label><br/>
-      <input type="email" name="email" id="name" placeholder="Enter Your EMAIL ID"><br/><br/>
+      <input type="email" name="email"  placeholder="Enter Your EMAIL ID"><br/><br/>
       <label>Password:</label>
-      <input type="password" name="pass" id="name" placeholder="Enter Your password here"><br/><br/>
+      <input type="password" name="pass"  placeholder="Enter Your password here"><br/><br/>
       <label>GENDER:</label><br/>
       <input type="radio" name="rd1" id="rd1">
       <label>Male</label>&nbsp;&nbsp; 
       <input type="radio" name="rd1" id="rd2">
       <label>female</label>&nbsp;<br/><br/>
       
-      <center><input type="button" value="submit" id="sub"></center><br/>
+      <center><input type="button" value="submit" id="sub" onclick="check()" ></center><br/>
       
       </form></aside></div>
       <hr><hr>
